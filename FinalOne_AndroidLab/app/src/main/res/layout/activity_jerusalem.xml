@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DestinationActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.finalproject_1190270_1190768.DesNameFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="53dp">
+
+        <Button
+            android:id="@+id/Desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/basic"
+            android:text="Description"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/basic"
+            android:text="Image"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/basic"
+            android:text="Location"
+            app:cornerRadius="50dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addToFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#959494"
+        android:text="Add to favorite"
+        android:textColor="#0B0A0A"
+        app:icon="@drawable/ic_baseline_favorite_24" />
+
+</LinearLayout>
